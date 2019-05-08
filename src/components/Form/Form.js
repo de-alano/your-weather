@@ -5,9 +5,8 @@ const Form = props => {
         <form onSubmit={props.submit}>
             <input
                 type="text"
-                value={props.value}
                 placeholder="Your city..."
-                onChange={props.change} />
+                name="city" />
             <button type="submit">Search</button>
         </form>
     );
