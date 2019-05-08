@@ -8,13 +8,9 @@ class App extends Component {
 
   state = {
     value: '',
-    date: '',
     city: '',
-    sunrise: '',
-    sunset: '',
-    temperature: '',
-    pressure: '',
-    wind: '',
+    currentWeather: [],
+    weeklyWeather: [],
     error: '',
   }
 
