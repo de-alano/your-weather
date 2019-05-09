@@ -1,4 +1,5 @@
 import React from 'react';
+import { getWeatherIcon } from './../../../utils/getWeatherIcon';
 
 const CurrentWeather = props => {
 
@@ -13,7 +14,6 @@ const CurrentWeather = props => {
     const weatherType = weather.weather[0].main;
     const weatherDescription = weather.weather[0].description;
     const iconID = weather.weather[0].icon;
-    const iconSource = `http://openweathermap.org/img/w/${iconID}.png`;
 
 
     return (
@@ -27,7 +27,7 @@ const CurrentWeather = props => {
             <p>Temperatura minimalna: {minTemp}</p>
             <p>{weatherType}</p>
             <p>{weatherDescription}</p>
-            <img src={iconSource} className="weather-icon" alt="Weather Icon" />
+            <img src={getWeatherIcon(iconID)} className="weather-icon" alt="Weather Icon" />
         </div>
     );
 }
