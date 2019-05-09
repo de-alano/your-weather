@@ -10,8 +10,7 @@ const WeeklyWeather = props => {
 
 
     return (
-        <div className="weather-weekly">
-            Pogoda na najbliższy tydzień
+        <div className="weekly-weather">
             {weeklyWeather}
         </div>
     );

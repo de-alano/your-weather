@@ -7,11 +7,11 @@ const WeeklyWeatherItem = props => {
     const iconID = props.icon;
 
     return (
-        <div>
+        <div className="daily-weather">
             {renderDayName(props.date)}
-            <p>Temperatura minimalna: {props.mintemp}</p>
-            <p>Temperatura maksymalna: {props.maxtemp}</p>
-            <img src={getWeatherIcon(iconID)} className="weather-icon" alt="Weather Icon" />
+            <p className="daily-weather__temp-min">Temperatura minimalna: {props.mintemp}</p>
+            <p className="daily-weather__temp-max">Temperatura maksymalna: {props.maxtemp}</p>
+            <img src={getWeatherIcon(iconID)} className="daily-weather__icon" alt="Weather Icon" />
         </div>
     );
 }

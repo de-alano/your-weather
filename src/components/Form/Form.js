@@ -2,12 +2,13 @@ import React from 'react';
 
 const Form = props => {
     return (
-        <form onSubmit={props.submit}>
+        <form onSubmit={props.submit} className="weather-form">
             <input
                 type="text"
                 placeholder="Your city..."
-                name="city" />
-            <button type="submit">Search</button>
+                name="city"
+                className="weather-form__input" />
+            <button type="submit" className="weather-form__button">Search</button>
         </form>
     );
 }

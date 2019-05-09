@@ -11,23 +11,20 @@ const CurrentWeather = props => {
     const humidity = weather.humidity;
     const maxTemp = weather.temp.max;
     const minTemp = weather.temp.min;
-    const weatherType = weather.weather[0].main;
     const weatherDescription = weather.weather[0].description;
     const iconID = weather.weather[0].icon;
 
 
     return (
-        <div className="weather-current">
-            <h1>Aktualna pogoda</h1>
-            <p>{city}</p>
-            <p>Czas: {time}</p>
-            <p>Ciśnienie: {pressure}</p>
-            <p>Wilgotność: {humidity}</p>
-            <p>Temperatura maksymalna: {maxTemp}</p>
-            <p>Temperatura minimalna: {minTemp}</p>
-            <p>{weatherType}</p>
-            <p>{weatherDescription}</p>
-            <img src={getWeatherIcon(iconID)} className="weather-icon" alt="Weather Icon" />
+        <div className="current-weather">
+            <p className="current-weather__location">{city}</p>
+            <p className="current-weather__date">Czas: {time}</p>
+            <p className="current-weather__pressure">Ciśnienie: {pressure}</p>
+            <p className="current-weather__humidity">Wilgotność: {humidity}</p>
+            <p className="current-weather__temp-max">Temperatura maksymalna: {maxTemp}</p>
+            <p className="current-weather__temp-min">Temperatura minimalna: {minTemp}</p>
+            <p className="current-weather__description">{weatherDescription}</p>
+            <img src={getWeatherIcon(iconID)} className="current-weather__icon" alt="Weather Icon" />
         </div>
     );
 }

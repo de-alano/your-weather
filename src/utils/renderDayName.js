@@ -12,7 +12,7 @@ const renderDayName = (day) => {
 
 
     return (
-        <p className="day-name">{Moment(day * 1000).calendar(null, days)}</p>
+        <p className="daily-weather__day-name">{Moment(day * 1000).calendar(null, days)}</p>
     )
 }
 
