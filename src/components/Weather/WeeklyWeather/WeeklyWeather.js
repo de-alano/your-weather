@@ -4,7 +4,7 @@ import WeeklyWeatherItem from './WeeklyWeatherItem/WeeklyWeatherItem';
 const WeeklyWeather = props => {
 
     const weeklyWeather = props.weekly.map((day, index) => (
-        <WeeklyWeatherItem mintemp={day.temp.min} maxtemp={day.temp.max} icon={day.weather[0].id} date={day.dt} key={index} />
+        <WeeklyWeatherItem mintemp={day.temp.min} maxtemp={day.temp.max} icon={day.weather[0].icon} date={day.dt} key={index} />
     ));
 
 

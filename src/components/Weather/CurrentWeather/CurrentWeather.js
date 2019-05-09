@@ -12,8 +12,8 @@ const CurrentWeather = props => {
     const minTemp = weather.temp.min;
     const weatherType = weather.weather[0].main;
     const weatherDescription = weather.weather[0].description;
-    const icon = weather.weather[0].id;
-    // const temperature = weather.temp.max;
+    const iconID = weather.weather[0].icon;
+    const iconSource = `http://openweathermap.org/img/w/${iconID}.png`;
 
 
     return (
@@ -27,7 +27,7 @@ const CurrentWeather = props => {
             <p>Temperatura minimalna: {minTemp}</p>
             <p>{weatherType}</p>
             <p>{weatherDescription}</p>
-            <p>{icon}</p>
+            <img src={iconSource} className="weather-icon" alt="Weather Icon" />
         </div>
     );
 }
