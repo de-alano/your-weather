@@ -7,10 +7,11 @@ import { fetchWeather } from '../utils/fetchWeather';
 class App extends Component {
 
   state = {
-    city: '',
-    currentWeather: {},
-    weeklyWeather: [],
+    city: undefined,
+    currentWeather: undefined,
+    weeklyWeather: undefined,
     error: false,
+    isLoaded: false,
 
   }
 
@@ -28,6 +29,15 @@ class App extends Component {
             currentWeather: data.list[0],
             weeklyWeather: data.list,
             error: false,
+            isLoaded: true
+          });
+        } else {
+          this.setState({
+            city: undefined,
+            currentWeather: undefined,
+            weeklyWeather: undefined,
+            error: true,
+            isLoaded: false
           });
         }
 
@@ -49,18 +59,21 @@ class App extends Component {
 
   render() {
 
-    const { error, city, currentWeather, weeklyWeather } = this.state;
+    const { error, city, currentWeather, weeklyWeather, isLoaded } = this.state;
 
+    const weather = isLoaded ?
+      (<Weather
+        error={error}
+        current={currentWeather}
+        weekly={weeklyWeather}
+        city={city} />)
+      : null
 
     return (
       <div className="App" >
         <Form
           submit={this.getWeather} />
-        <Weather
-          error={error}
-          current={currentWeather}
-          weekly={weeklyWeather}
-          city={city} />
+        {weather}
       </div>
     );
   }
