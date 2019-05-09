@@ -1,5 +1,6 @@
 import React from 'react';
 import { getWeatherIcon } from './../../../../utils/getWeatherIcon';
+import { renderDayName } from '../../../../utils/renderDayName';
 
 const WeeklyWeatherItem = props => {
 
@@ -7,7 +8,7 @@ const WeeklyWeatherItem = props => {
 
     return (
         <div>
-            <p>Data: {props.date}</p>
+            {renderDayName(props.date)}
             <p>Temperatura minimalna: {props.mintemp}</p>
             <p>Temperatura maksymalna: {props.maxtemp}</p>
             <img src={getWeatherIcon(iconID)} className="weather-icon" alt="Weather Icon" />
