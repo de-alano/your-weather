@@ -1,5 +1,6 @@
 import React from 'react';
 import WeeklyWeatherItem from './WeeklyWeatherItem/WeeklyWeatherItem';
+import './WeeklyWeather.css';
 
 const WeeklyWeather = props => {
 

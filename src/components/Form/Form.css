@@ -1,0 +1,35 @@
+.weather-form {
+    background-color: #2E2884;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-form__input {
+    margin-right: 5rem;
+    padding: .6rem 1rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+}
+
+.weather-form__input:focus {
+    border-bottom: 1px solid #EB79BE;
+}
+
+.weather-form__button {
+    padding: .6rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: #EB79BE;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}

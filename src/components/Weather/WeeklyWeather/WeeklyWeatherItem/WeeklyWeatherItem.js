@@ -9,8 +9,8 @@ const WeeklyWeatherItem = props => {
     return (
         <div className="daily-weather">
             {renderDayName(props.date)}
-            <p className="daily-weather__temp-min">Temperatura minimalna: {props.mintemp}</p>
-            <p className="daily-weather__temp-max">Temperatura maksymalna: {props.maxtemp}</p>
+            <p className="daily-weather__temp-min">{props.mintemp}</p>
+            <p className="daily-weather__temp-max">{props.maxtemp}</p>
             <img src={getWeatherIcon(iconID)} className="daily-weather__icon" alt="Weather Icon" />
         </div>
     );

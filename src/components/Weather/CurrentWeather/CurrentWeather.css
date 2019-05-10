@@ -1,0 +1,59 @@
+.current-weather {
+    background-color: #161352;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.current-weather__main {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.current-weather-container {
+    display: flex;
+    padding: 5rem 0;
+}
+
+.current-weather__info {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.current-weather__details {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+
+.current-weather__location, .current-weather__date {
+    display: flex;
+}
+
+.current-weather__location__icon {
+    width: 2rem;
+}
+
+.current-weater__date__icon {
+    width: 2rem;
+}
+
+.current-weather__wind__icon {
+    width: 2rem;
+}
+.current-weather__pressure__icon {
+    width: 2rem;
+}
+.current-weather__humidity__icon {
+    width: 2rem;
+}
+.current-weather__cloudiness__icon {
+    width: 2rem;
+}
