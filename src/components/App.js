@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './App.scss';
 import Form from './Form/Form';
 import Weather from './Weather/Weather';
 import { fetchWeather } from '../utils/fetchWeather';

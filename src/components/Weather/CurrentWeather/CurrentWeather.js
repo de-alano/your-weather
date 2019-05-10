@@ -1,6 +1,6 @@
 import React from 'react';
 import { getWeatherIcon } from './../../../utils/getWeatherIcon';
-import './CurrentWeather.css';
+import './CurrentWeather.scss';
 import { ReactComponent as Location } from './../../../images/location.svg';
 import { ReactComponent as Time } from './../../../images/date.svg';
 import { ReactComponent as Wind } from './../../../images/wind.svg';
@@ -62,25 +62,25 @@ const CurrentWeather = props => {
                         </div>
                         <p className="current-weather__wind__info">{wind} m/s</p>
                     </div>
-                <div className="current-weather__pressure">
-                    <div className="current-weather__pressure__icon">
-                        <Pressure />
+                    <div className="current-weather__pressure">
+                        <div className="current-weather__pressure__icon">
+                            <Pressure />
+                        </div>
+                        <p className="current-weather__pressure__info">{pressure} hPa</p>
                     </div>
-                    <p className="current-weather__pressure__info">{pressure} hPa</p>
-                </div>
-                <div className="current-weather__humidity">
-                    <div className="current-weather__humidity__icon">
-                        <Humidity />
+                    <div className="current-weather__humidity">
+                        <div className="current-weather__humidity__icon">
+                            <Humidity />
+                        </div>
+                        <p className="current-weather__humidity__info">{humidity} %</p>
                     </div>
-                    <p className="current-weather__humidity__info">{humidity} %</p>
-                </div>
-                <div className="current-weather__cloudiness">
-                    <div className="current-weather__cloudiness__icon">
-                        <Cloudiness />
+                    <div className="current-weather__cloudiness">
+                        <div className="current-weather__cloudiness__icon">
+                            <Cloudiness />
+                        </div>
+                        <p className="current-weather__cloudiness__info">{cloudiness} %</p>
                     </div>
-                    <p className="current-weather__cloudiness__info">{cloudiness} %</p>
                 </div>
-            </div>
             </div>
         </div>
     );
