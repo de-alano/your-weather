@@ -1,0 +1,29 @@
+// COLORS
+$color-primary: #EB79BE;
+$color-primary-light: #DE86A3;
+$color-primary-dark: #6A62EF;
+
+$color-secondary: #161352;;
+$color-tertiary: #2E2884;
+
+$color-grey-light-1: #dfe6e9;
+$color-grey-light-2: #b2bec3;
+
+$color-grey-dark-1: #636e72;
+$color-grey-dark-2: #2d3436;
+
+$color-white: #fff;
+$color-black: #000;
+
+
+// FONTS
+@import url('https://fonts.googleapis.com/css?family=Lato:200,300,400');
+$font-family: 'Lato', sans-serif;
+
+// MIXINS
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}

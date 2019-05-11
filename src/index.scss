@@ -1,6 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:200,400');
+@import './variables.scss';
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
 }
@@ -13,11 +15,9 @@ body {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background-image: radial-gradient(circle at 0% 0%, #DE86A3, #EB79BE, #6A62EF);
-  font-family: 'Raleway', sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-image: radial-gradient(circle at 0% 0%, $color-primary-dark, $color-primary, $color-primary-dark);
+  font-family: $font-family;
+  @include flex(center, center, row);
 }
 
 #root {

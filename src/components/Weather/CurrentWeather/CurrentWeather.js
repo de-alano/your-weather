@@ -14,12 +14,12 @@ const CurrentWeather = props => {
     const date = new Date().toLocaleDateString();
 
     const weather = props.current;
-    const maxTemp = Math.floor(weather.temp.max);
+    const maxTemp = Math.round(weather.temp.max);
     const iconID = weather.weather[0].icon;
     const weatherDescription = weather.weather[0].description;
 
-    const wind = weather.speed;
-    const pressure = weather.pressure;
+    const wind = Math.round(weather.speed);
+    const pressure = Math.round(weather.pressure);
     const humidity = weather.humidity;
     const cloudiness = weather.clouds;
 
@@ -40,7 +40,7 @@ const CurrentWeather = props => {
                 </div>
 
                 <div className="current-weather__date">
-                    <div className="current-weater__date__icon">
+                    <div className="current-weather__date__icon">
                         <Time />
                     </div>
                     <p className="current-weather__date__info">{date}</p>
@@ -50,8 +50,8 @@ const CurrentWeather = props => {
 
             <div className="current-weather-container">
                 <div className="current-weather__info">
+                    <p className="current-weather__temp-max">{maxTemp} &#176;</p>
                     <img src={getWeatherIcon(iconID)} className="current-weather__icon" alt="Weather Icon" />
-                    <p className="current-weather__temp-max">{maxTemp} &#8451;</p>
                     <p className="current-weather__description">{weatherDescription}</p>
                 </div>
 
@@ -60,24 +60,28 @@ const CurrentWeather = props => {
                         <div className="current-weather__wind__icon">
                             <Wind />
                         </div>
+                        <p className="current-weather__wind__name">Wind</p>
                         <p className="current-weather__wind__info">{wind} m/s</p>
                     </div>
                     <div className="current-weather__pressure">
                         <div className="current-weather__pressure__icon">
                             <Pressure />
                         </div>
+                        <p className="current-weather__pressure__name">Pressure</p>
                         <p className="current-weather__pressure__info">{pressure} hPa</p>
                     </div>
                     <div className="current-weather__humidity">
                         <div className="current-weather__humidity__icon">
                             <Humidity />
                         </div>
+                        <p className="current-weather__humidity__name">Humidity</p>
                         <p className="current-weather__humidity__info">{humidity} %</p>
                     </div>
                     <div className="current-weather__cloudiness">
                         <div className="current-weather__cloudiness__icon">
                             <Cloudiness />
                         </div>
+                        <p className="current-weather__cloudiness__name">Cloudiness</p>
                         <p className="current-weather__cloudiness__info">{cloudiness} %</p>
                     </div>
                 </div>
