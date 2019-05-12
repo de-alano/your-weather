@@ -1,4 +1,10 @@
 .weekly-weather {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 2rem;
 }

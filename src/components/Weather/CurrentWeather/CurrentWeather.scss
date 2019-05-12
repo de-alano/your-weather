@@ -16,14 +16,14 @@
     }
 
     &__info {
-        width: 50%;
+        width: 60%;
         @include flex(center, center, column);
         // text-align: center;
         // padding: 3rem 0;
     }
 
     &__details {
-        width: 50%;
+        width: 40%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 2rem;
