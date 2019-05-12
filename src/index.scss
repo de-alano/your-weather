@@ -15,14 +15,24 @@ body {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background-image: radial-gradient(circle at 0% 0%, $color-primary-dark, $color-primary, $color-primary-dark);
+  background: url(./../src/images/cloud.png), radial-gradient(circle at 0% 0%, $color-primary-dark, $color-primary, $color-primary-dark);
+  background-position: left 0 top 0, left 0 top 0;
+  background-size: cover;
   font-family: $font-family;
   @include flex(center, center, row);
+  position: relative;
+  animation: animatedClouds 150s linear infinite;
 }
 
 #root {
   width: 70%;
   max-width: 100rem;
-  height: 80vh;
+  height: 85vh;
+}
+
+@keyframes animatedClouds {
+  100% {
+    background-position: left 544rem top 0, left 0 top 0;
+  }
 }
 

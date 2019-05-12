@@ -4,6 +4,7 @@
     background-color: $color-secondary;
     color: $color-white;
     font-size: 2rem;
+    box-sizing: border-box;
 
     &__main {
         @include flex(space-between, center, row);
@@ -13,13 +14,14 @@
     &-container {
         @include flex(stretch, stretch, row);
         padding: 5rem 4rem;
+        box-sizing: border-box;
     }
 
     &__info {
         width: 60%;
         @include flex(center, center, column);
-        // text-align: center;
-        // padding: 3rem 0;
+        margin-right: 4rem;
+        margin-top: -3rem;
     }
 
     &__details {
@@ -49,20 +51,18 @@
 
 
     &__icon {
-        width: 10rem;
+        width: 8rem;
         display: block;
-        margin: 0 auto;
         margin-bottom: 1rem;
     }
 
     &__temp-max {
-        font-size: 7rem;
-        margin: 0 auto;
+        font-size: 9rem;
         margin-bottom: 1rem;
+        margin-top: 2rem;
     }
 
     &__description {
-        margin: 0 auto;
         font-size: 1.5rem;
         text-transform: uppercase;
         letter-spacing: 2px;
