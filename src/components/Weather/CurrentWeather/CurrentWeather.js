@@ -18,7 +18,7 @@ const CurrentWeather = props => {
     const iconID = weather.weather[0].icon;
     const weatherDescription = weather.weather[0].description;
 
-    const wind = Math.round(weather.speed);
+    const wind = Math.round(weather.speed * 3.6);
     const pressure = Math.round(weather.pressure);
     const humidity = weather.humidity;
     const cloudiness = weather.clouds;
@@ -61,7 +61,7 @@ const CurrentWeather = props => {
                             <Wind />
                         </div>
                         <p className="current-weather__wind__name">Wind</p>
-                        <p className="current-weather__wind__info">{wind} m/s</p>
+                        <p className="current-weather__wind__info">{wind} km/h</p>
                     </div>
                     <div className="current-weather__pressure">
                         <div className="current-weather__pressure__icon">
