@@ -13,7 +13,7 @@
 
     &-container {
         @include flex(stretch, stretch, row);
-        padding: 5rem 4rem;
+        padding: 3rem 4rem;
         box-sizing: border-box;
     }
 
@@ -28,10 +28,11 @@
         width: 40%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 2rem;
+        grid-gap: 1.5rem;
         justify-items: center;
         align-items: center;
     }
+
     
     &__location, &__date {
         @include flex(center, center, row);
@@ -75,6 +76,8 @@
         height: 100%;
         background-color: rgba($color-white, 0.05);
         border-radius: 1rem;
+        box-sizing: border-box;
+        padding: 1rem;
     }
 
     &__wind__icon, &__pressure__icon, &__humidity__icon, &__cloudiness__icon {
@@ -90,7 +93,7 @@
     }
 
     &__wind__info, &__pressure__info, &__humidity__info, &__cloudiness__info {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         font-weight: 400;
 
     }

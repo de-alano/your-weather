@@ -22,12 +22,9 @@ body {
   font-family: $font-family;
   @include flex(center, center, row);
   position: relative;
-  animation: animatedClouds 120s linear infinite;
+  animation: animatedClouds 180s linear infinite;
 }
 
-#root {
-  height: auto;
-}
 
 @keyframes animatedClouds {
   0% {
