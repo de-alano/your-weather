@@ -52,6 +52,7 @@ class App extends Component {
       })
 
     e.preventDefault();
+    e.target.elements.city.value = '';
   }
 
 

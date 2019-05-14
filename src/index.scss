@@ -5,6 +5,7 @@
 *::after {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -21,16 +22,17 @@ body {
   font-family: $font-family;
   @include flex(center, center, row);
   position: relative;
-  animation: animatedClouds 150s linear infinite;
+  animation: animatedClouds 120s linear infinite;
 }
 
 #root {
-  width: 70%;
-  max-width: 100rem;
-  height: 85vh;
+  height: auto;
 }
 
 @keyframes animatedClouds {
+  0% {
+    background-position: left 0 top 0, left 0 top 0;
+  }
   100% {
     background-position: left 544rem top 0, left 0 top 0;
   }

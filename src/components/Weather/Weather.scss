@@ -3,4 +3,6 @@
 .weather {
     background-color: $color-white;
     box-sizing: border-box;
+    border-radius: 2rem;
+    overflow: hidden;
 }
