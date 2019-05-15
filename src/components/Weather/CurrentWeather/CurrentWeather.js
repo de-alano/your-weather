@@ -1,12 +1,12 @@
 import React from 'react';
 import { getWeatherIcon } from './../../../utils/getWeatherIcon';
 import './CurrentWeather.scss';
-import { ReactComponent as Location } from './../../../images/location.svg';
-import { ReactComponent as Time } from './../../../images/date.svg';
-import { ReactComponent as Wind } from './../../../images/wind.svg';
-import { ReactComponent as Pressure } from './../../../images/pressure.svg';
-import { ReactComponent as Humidity } from './../../../images/humidity.svg';
-import { ReactComponent as Cloudiness } from './../../../images/cloudiness.svg';
+import { ReactComponent as LocationIcon } from './../../../images/location.svg';
+import { ReactComponent as TimeIcon } from './../../../images/date.svg';
+import { ReactComponent as WindIcon } from './../../../images/wind.svg';
+import { ReactComponent as PressureIcon } from './../../../images/pressure.svg';
+import { ReactComponent as HumidityIcon } from './../../../images/humidity.svg';
+import { ReactComponent as CloudinessIcon } from './../../../images/cloudiness.svg';
 
 const CurrentWeather = props => {
 
@@ -29,14 +29,14 @@ const CurrentWeather = props => {
             <div className="current-weather__main">
                 <div className="current-weather__location">
                     <div className="current-weather__location__icon">
-                        <Location />
+                        <LocationIcon />
                     </div>
                     <p className="current-weather__location__info">{city}</p>
                 </div>
 
                 <div className="current-weather__date">
                     <div className="current-weather__date__icon">
-                        <Time />
+                        <TimeIcon />
                     </div>
                     <p className="current-weather__date__info">{date}</p>
                 </div>
@@ -53,28 +53,28 @@ const CurrentWeather = props => {
                 <div className="current-weather__details">
                     <div className="current-weather__wind">
                         <div className="current-weather__wind__icon">
-                            <Wind />
+                            <WindIcon />
                         </div>
                         <p className="current-weather__wind__name">Wind</p>
                         <p className="current-weather__wind__info">{wind} km/h</p>
                     </div>
                     <div className="current-weather__pressure">
                         <div className="current-weather__pressure__icon">
-                            <Pressure />
+                            <PressureIcon />
                         </div>
                         <p className="current-weather__pressure__name">Pressure</p>
                         <p className="current-weather__pressure__info">{pressure} hPa</p>
                     </div>
                     <div className="current-weather__humidity">
                         <div className="current-weather__humidity__icon">
-                            <Humidity />
+                            <HumidityIcon />
                         </div>
                         <p className="current-weather__humidity__name">Humidity</p>
                         <p className="current-weather__humidity__info">{humidity} %</p>
                     </div>
                     <div className="current-weather__cloudiness">
                         <div className="current-weather__cloudiness__icon">
-                            <Cloudiness />
+                            <CloudinessIcon />
                         </div>
                         <p className="current-weather__cloudiness__name">Cloudiness</p>
                         <p className="current-weather__cloudiness__info">{cloudiness} %</p>

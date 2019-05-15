@@ -5,6 +5,30 @@
     // text-align: center;
     @include flex(center, center, column);
 
+    &:first-child {
+        @include animate(0s);
+    }
+    &:nth-child(2) {
+        @include animate(0.2s);
+    }
+    &:nth-child(3) {
+        @include animate(0.4s);
+    }
+    &:nth-child(4) {
+        @include animate(0.6s);
+    }
+    &:nth-child(5) {
+        @include animate(0.8s);
+    }
+    &:nth-child(6) {
+        @include animate(1s);
+    }
+    &:nth-child(7) {
+        @include animate(1.2s);
+    }
+    
+    
+
     &__day-name {
         font-size: 1.4rem;
         letter-spacing: 1px;
@@ -15,10 +39,6 @@
 
     &__icon {
         margin-bottom: 0.5rem;
-    }
-
-    &__temp {
-
     }
 
     &__temp-value {
@@ -37,3 +57,8 @@
         color: $color-grey-light-2;
     }
 }
+
+    @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    } 
