@@ -5,6 +5,7 @@
     padding: 2rem 0;
     @include flex(center, center, row);
     box-sizing: border-box;
+    box-shadow: 2rem -1rem 3rem rgba(0,0,0,0.3), -2rem 1rem 3rem rgba(0,0,0,0.3);
 }
 
 .weather-form__input {
