@@ -6,6 +6,10 @@
     @include flex(center, center, row);
     box-sizing: border-box;
     box-shadow: 2rem -1rem 3rem rgba(0,0,0,0.3), -2rem 1rem 3rem rgba(0,0,0,0.3);
+
+    @media only screen and (max-width: $bp-600) {
+        height: 10vh;
+    }
 }
 
 .weather-form__input {
@@ -33,6 +37,14 @@
         -webkit-text-fill-color: $color-white;
         box-shadow: 0 0 0px 1000px $color-tertiary inset;
         transition: background-color 5000s ease-in-out 0s;
+    }
+
+    @media only screen and (max-width: $bp-900) {
+        width: 50%;
+     }
+
+     @media only screen and (max-width: $bp-600) {
+        font-size: 1.5rem;
     }
 
 }

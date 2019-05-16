@@ -1,4 +1,10 @@
+@import './../variables.scss';
+
 .App {
    width: 70vw;
    max-width: 100rem;
+
+   @media only screen and (max-width: $bp-900) {
+      width: 80vw;
+   }
 }

@@ -9,12 +9,24 @@
     &__main {
         @include flex(space-between, center, row);
         padding: 2rem;
+
+        @media only screen and (max-width: $bp-600) {
+            padding: 1rem;
+        }
     }
 
     &-container {
         @include flex(stretch, stretch, row);
         padding: 3rem 4rem;
         box-sizing: border-box;
+
+        @media only screen and (max-width: $bp-700) {
+           padding: 2rem;
+         }
+
+        @media only screen and (max-width: $bp-600) {
+            @include flex(center, center, column);
+        }
     }
 
     &__info {
@@ -22,6 +34,17 @@
         @include flex(center, center, column);
         margin-right: 4rem;
         margin-top: -3rem;
+
+        @media only screen and (max-width: $bp-900) {
+            width: 50%;
+         }
+
+        @media only screen and (max-width: $bp-600) {
+            width: 100%;
+            margin-right: 0;
+            @include flex(space-evenly, center, row);
+            padding: 1rem 0;
+        }
     }
 
     &__details {
@@ -31,6 +54,15 @@
         grid-gap: 1.5rem;
         justify-items: center;
         align-items: center;
+
+        @media only screen and (max-width: $bp-900) {
+            width: 50%;
+         }
+
+         @media only screen and (max-width: $bp-600) {
+            width: 100%;
+            padding: 1rem 5rem;
+        }
     }
 
     
@@ -42,25 +74,48 @@
     &__date__icon {
         width: 2rem;
         margin-right: 1rem; 
+
+        @media only screen and (max-width: $bp-600) {
+            width: 1.5rem;
+        }
     }
 
     &__location__info, &__date__info {
         font-size: 1.8rem;
         letter-spacing: 1px;
         font-weight: 300;
+
+        @media only screen and (max-width: $bp-600) {
+            font-size: 1.5rem;
+        }
     }
 
+    &__type {
+        @media only screen and (max-width: $bp-600) {
+            order: 2;
+            @include flex(center, center, column);
+        }
+    }
 
     &__icon {
         width: 8rem;
         display: block;
         margin-bottom: 1rem;
+
+        @media only screen and (max-width: $bp-600) {
+            width: 6rem;
+            margin-bottom: 0.5rem;
+        }
     }
 
     &__temp-max {
         font-size: 9rem;
         margin-bottom: 1rem;
         margin-top: 2rem;
+
+        @media only screen and (max-width: $bp-600) {
+            font-size: 6rem;
+        }
     }
 
     &__description {
@@ -68,6 +123,10 @@
         text-transform: uppercase;
         letter-spacing: 2px;
         font-weight: 300;
+
+        @media only screen and (max-width: $bp-600) {
+            font-size: 1.3rem;
+        }
     }
 
     &__wind, &__pressure, &__humidity, &__cloudiness {

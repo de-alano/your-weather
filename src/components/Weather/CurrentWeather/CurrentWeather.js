@@ -45,8 +45,10 @@ const CurrentWeather = props => {
 
             <div className="current-weather-container">
                 <div className="current-weather__info">
-                    <img src={getWeatherIcon(iconID)} className="current-weather__icon" alt="Weather Icon" />
-                    <p className="current-weather__description">{weatherDescription}</p>
+                    <div className="current-weather__type">
+                        <img src={getWeatherIcon(iconID)} className="current-weather__icon" alt="Weather Icon" />
+                        <p className="current-weather__description">{weatherDescription}</p>
+                    </div>
                     <p className="current-weather__temp-max">{maxTemp} &#176;</p>
                 </div>
 

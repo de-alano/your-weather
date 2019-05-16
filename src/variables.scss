@@ -34,3 +34,11 @@ $font-family: 'Lato', sans-serif;
 @mixin animate($delay) {
   animation: fadeIn .5s ease-in-out $delay 1 both;
 }
+
+// MEDIA QUERY BREAKPOINTS
+$bp-400: 25em; // 400px
+$bp-500: 31.25em; // 500px
+$bp-600: 37.5em; // 500px
+$bp-700: 43.75em; // 700px
+$bp-900: 56.25em; // 900px
+$bp-1200: 75em; // 1200px
