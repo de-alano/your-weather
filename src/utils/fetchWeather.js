@@ -1,5 +1,5 @@
 const key = 'd94bcd435b62a031771c35633f9f310a';
-const URL = 'http://api.openweathermap.org/data/2.5/forecast/daily?q=';
+const URL = 'https://api.openweathermap.org/data/2.5/forecast/daily?q=';
 
 // Fetch weather data from Open Weather Map API
 const fetchWeather = city => {
