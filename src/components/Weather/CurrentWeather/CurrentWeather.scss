@@ -6,6 +6,7 @@
     font-size: 2rem;
     box-sizing: border-box;
 
+
     &__main {
         @include flex(space-between, center, row);
         padding: 2rem;
@@ -25,7 +26,7 @@
          }
 
         @media only screen and (max-width: $bp-600) {
-            @include flex(center, center, column);
+            @include flex(space-between, center, column);
         }
     }
 
@@ -33,7 +34,7 @@
         width: 60%;
         @include flex(center, center, column);
         margin-right: 4rem;
-        margin-top: -3rem;
+        // margin-top: -3rem;
 
         @media only screen and (max-width: $bp-900) {
             width: 50%;
@@ -43,7 +44,7 @@
             width: 100%;
             margin-right: 0;
             @include flex(space-evenly, center, row);
-            padding: 1rem 0;
+            // padding: 2rem 0;
         }
     }
 
@@ -61,7 +62,7 @@
 
          @media only screen and (max-width: $bp-600) {
             width: 100%;
-            padding: 1rem 5rem;
+            padding: 1rem 4rem;
         }
     }
 
@@ -91,9 +92,9 @@
     }
 
     &__type {
+        @include flex(center, center, column);
         @media only screen and (max-width: $bp-600) {
             order: 2;
-            @include flex(center, center, column);
         }
     }
 
