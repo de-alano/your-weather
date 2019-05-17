@@ -15,7 +15,6 @@ const fetchWeather = city => {
         .then(response => response.json())
 
 }
-
 export { fetchWeather }
 
 
