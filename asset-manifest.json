@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/your-weather/static/css/main.ca05e03d.chunk.css",
+    "main.js": "/your-weather/static/js/main.6d9d04a8.chunk.js",
+    "main.js.map": "/your-weather/static/js/main.6d9d04a8.chunk.js.map",
+    "runtime~main.js": "/your-weather/static/js/runtime~main.d215bba5.js",
+    "runtime~main.js.map": "/your-weather/static/js/runtime~main.d215bba5.js.map",
+    "static/js/2.a6048855.chunk.js": "/your-weather/static/js/2.a6048855.chunk.js",
+    "static/js/2.a6048855.chunk.js.map": "/your-weather/static/js/2.a6048855.chunk.js.map",
+    "index.html": "/your-weather/index.html",
+    "precache-manifest.cd56aa41633f988c59e24acd1a1fd56a.js": "/your-weather/precache-manifest.cd56aa41633f988c59e24acd1a1fd56a.js",
+    "service-worker.js": "/your-weather/service-worker.js",
+    "static/css/main.ca05e03d.chunk.css.map": "/your-weather/static/css/main.ca05e03d.chunk.css.map",
+    "static/media/index.scss": "/your-weather/static/media/cloud.7671488d.png",
+    "static/media/cloudiness.7e666543.svg": "/your-weather/static/media/cloudiness.7e666543.svg",
+    "static/media/date.c0735707.svg": "/your-weather/static/media/date.c0735707.svg",
+    "static/media/humidity.dda30011.svg": "/your-weather/static/media/humidity.dda30011.svg",
+    "static/media/location.2b7c48a7.svg": "/your-weather/static/media/location.2b7c48a7.svg",
+    "static/media/pressure.1ea0bdf2.svg": "/your-weather/static/media/pressure.1ea0bdf2.svg",
+    "static/media/wind.b3304a3d.svg": "/your-weather/static/media/wind.b3304a3d.svg"
+  }
+}
