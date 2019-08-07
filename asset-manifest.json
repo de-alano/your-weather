@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/your-weather/static/css/main.5b42642b.chunk.css",
-    "main.js": "/your-weather/static/js/main.85fb2742.chunk.js",
-    "main.js.map": "/your-weather/static/js/main.85fb2742.chunk.js.map",
+    "main.css": "/your-weather/static/css/main.866b5a1f.chunk.css",
+    "main.js": "/your-weather/static/js/main.1a331073.chunk.js",
+    "main.js.map": "/your-weather/static/js/main.1a331073.chunk.js.map",
     "runtime~main.js": "/your-weather/static/js/runtime~main.d215bba5.js",
     "runtime~main.js.map": "/your-weather/static/js/runtime~main.d215bba5.js.map",
-    "static/js/2.271c48f4.chunk.js": "/your-weather/static/js/2.271c48f4.chunk.js",
-    "static/js/2.271c48f4.chunk.js.map": "/your-weather/static/js/2.271c48f4.chunk.js.map",
+    "static/js/2.7812c844.chunk.js": "/your-weather/static/js/2.7812c844.chunk.js",
+    "static/js/2.7812c844.chunk.js.map": "/your-weather/static/js/2.7812c844.chunk.js.map",
     "index.html": "/your-weather/index.html",
-    "precache-manifest.68539e1a85fcdbc5feb39f8a785777e2.js": "/your-weather/precache-manifest.68539e1a85fcdbc5feb39f8a785777e2.js",
+    "precache-manifest.c038dd90f6b58d1db487ca7a6c9cc9a4.js": "/your-weather/precache-manifest.c038dd90f6b58d1db487ca7a6c9cc9a4.js",
     "service-worker.js": "/your-weather/service-worker.js",
-    "static/css/main.5b42642b.chunk.css.map": "/your-weather/static/css/main.5b42642b.chunk.css.map",
+    "static/css/main.866b5a1f.chunk.css.map": "/your-weather/static/css/main.866b5a1f.chunk.css.map",
     "static/media/index.scss": "/your-weather/static/media/cloud.7671488d.png",
     "static/media/cloudiness.7e666543.svg": "/your-weather/static/media/cloudiness.7e666543.svg",
     "static/media/date.c0735707.svg": "/your-weather/static/media/date.c0735707.svg",
     "static/media/humidity.dda30011.svg": "/your-weather/static/media/humidity.dda30011.svg",
     "static/media/location.2b7c48a7.svg": "/your-weather/static/media/location.2b7c48a7.svg",
     "static/media/pressure.1ea0bdf2.svg": "/your-weather/static/media/pressure.1ea0bdf2.svg",
+    "static/media/rings.b14b1baf.svg": "/your-weather/static/media/rings.b14b1baf.svg",
     "static/media/wind.b3304a3d.svg": "/your-weather/static/media/wind.b3304a3d.svg"
   }
 }

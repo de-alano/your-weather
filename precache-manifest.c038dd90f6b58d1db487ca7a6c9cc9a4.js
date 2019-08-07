@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e9975d40aea2e38c05a71df55434cb17",
+    "revision": "b0ff893d6aa42e223866ca48febb6db5",
     "url": "/your-weather/index.html"
   },
   {
-    "revision": "ed9e95919baf5189bd95",
-    "url": "/your-weather/static/css/main.5b42642b.chunk.css"
+    "revision": "e6653a48633c3231e2d2",
+    "url": "/your-weather/static/css/main.866b5a1f.chunk.css"
   },
   {
-    "revision": "54eee92fa485dbc933e5",
-    "url": "/your-weather/static/js/2.271c48f4.chunk.js"
+    "revision": "d7557da34258cb5b30ee",
+    "url": "/your-weather/static/js/2.7812c844.chunk.js"
   },
   {
-    "revision": "ed9e95919baf5189bd95",
-    "url": "/your-weather/static/js/main.85fb2742.chunk.js"
+    "revision": "e6653a48633c3231e2d2",
+    "url": "/your-weather/static/js/main.1a331073.chunk.js"
   },
   {
     "revision": "d90b279174e1e88c55fe",
@@ -42,6 +42,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "1ea0bdf2dfbcebc1b72f2b66607cb345",
     "url": "/your-weather/static/media/pressure.1ea0bdf2.svg"
+  },
+  {
+    "revision": "b14b1bafe78f64b79b9c35bd2cd0ecc8",
+    "url": "/your-weather/static/media/rings.b14b1baf.svg"
   },
   {
     "revision": "b3304a3df7b6e6e57d9ed67df0fab7e6",
