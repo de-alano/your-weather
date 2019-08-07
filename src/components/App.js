@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Preloader, Placeholder } from 'react-preloading-screen';
+import Loader from './Loader/Loader';
 import './App.scss';
 import Form from './Form/Form';
 import Weather from './Weather/Weather';
@@ -71,11 +73,16 @@ class App extends Component {
       : null
 
     return (
-      <div className="App" >
-        <Form
-          submit={this.getWeather} />
-        {weather}
-      </div>
+      <Preloader fadeDuration="3000">
+        <div className="App" >
+          <Form
+            submit={this.getWeather} />
+          {weather}
+        </div>
+        <Placeholder>
+          <Loader />
+        </Placeholder>
+      </Preloader>
     );
   }
 }
